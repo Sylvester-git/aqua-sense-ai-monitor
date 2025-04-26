@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Water-themed colors
+				water: {
+					light: '#E0F7FF',
+					DEFAULT: '#0EA5E9',
+					dark: '#0C4A6E',
+				},
+				aqua: {
+					light: '#CCFBF1',
+					DEFAULT: '#14B8A6',
+					dark: '#0F766E',
+				},
+				safe: {
+					DEFAULT: '#059669',
+					light: '#D1FAE5',
+				},
+				unsafe: {
+					DEFAULT: '#DC2626',
+					light: '#FEE2E2',
 				}
 			},
 			borderRadius: {
@@ -84,11 +104,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'water-wave': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(100%)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'water-wave': 'water-wave 3s ease-in-out infinite'
 			}
 		}
 	},
