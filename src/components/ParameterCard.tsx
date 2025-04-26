@@ -60,7 +60,7 @@ const ParameterCard: React.FC<ParameterCardProps> = ({
           <Button
             variant="ghost"
             size="sm"
-            onClick={() => navigate(detailsPath)}
+            onClick={() => navigate(`/parameter/${detailsPath}`)}
             className="text-water-dark self-end"
           >
             Details

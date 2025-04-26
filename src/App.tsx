@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +7,7 @@ import Index from "./pages/Index";
 import HistoricalView from "./pages/HistoricalView";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
+import ParameterDetails from "./pages/ParameterDetails";
 
 const queryClient = new QueryClient();
 
@@ -21,7 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/historical" element={<HistoricalView />} />
           <Route path="/settings" element={<Settings />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/parameter/:paramId" element={<ParameterDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
